@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Details</title>
+     <link rel="stylesheet" href="css/index.css"> -->
+     <link rel="stylesheet" href="css/order.css"> -->
+    <script src="js/order.js"></script>
+   
+</head>
+<body>
+    <div class="navbar">
+    
+        <a href="/admin">ADMIN</a>
+        <a href="/">HOME</a>
+     </div>
+    
+     <div id="head1">
+        <h1 id="h1" style="text-align:center">Appoinment confirmation</h1>
+       
+    </div>
+       
+  <div class="box">
+    <h1 style="color :rgb(5, 4, 4)">Enter the Details!!</h1>
+    
+    <form action="/place" method="POST">
+        <input type="text" placeholder="Enter your Name" id="name" name="name" required><br><br>
+        <input type="text" placeholder="Enter doctor name" id="doctorname" name="doctorname" required><br><br>
+        <input type="text"  placeholder="Enter your Adress" id="adress" name="address" required> &nbsp; &nbsp; &nbsp;<br><br>
+        <input type="number" id="phone" name="phone" placeholder="Enter your phone no" required><br><br>
+       <h3>click below to confirm your appoinment</h3>
+       <button type="submit">CONFIRM</button>
+    </form>
+    <h2 style="color:darkblue;text-align: center;">Your token no is : <%=token %></h2> 
+    <br>
+   <div id="result"></div>
+       
+</body>
+</html>
